@@ -6,8 +6,13 @@
 
 import { Platform } from 'react-native'
 
+const LightIcons = {
+  _fontFamily: Platform.OS === 'ios' ? 'FontAwesome5Pro-Light' : 'fa-light-300',
+  plus: "\uf067|light",
+}
+
 const SolidIcons = {
-  _fontFamily: Platform.OS === 'ios' ? 'FontAwesome5FreeSolid' : 'fa-solid-900',
+  _fontFamily: Platform.OS === 'ios' ? 'FontAwesome5Pro-Solid' : 'fa-solid-900',
   ad: "\uf641|solid",
   addressBook: "\uf2b9|solid",
   addressCard: "\uf2bb|solid",
@@ -967,9 +972,10 @@ const SolidIcons = {
 }
 
 const RegularIcons = {
-  _fontFamily: Platform.OS === 'ios' ? 'FontAwesome5FreeRegular' : 'fa-regular-400',
+  _fontFamily: Platform.OS === 'ios' ? 'FontAwesome5Pro-Regular' : 'fa-regular-400',
   addressBook: "\uf2b9|regular",
   addressCard: "\uf2bb|regular",
+  angleRight: "\uf105|regular",
   angry: "\uf556|regular",
   arrowAltCircleDown: "\uf358|regular",
   arrowAltCircleLeft: "\uf359|regular",
@@ -1012,6 +1018,7 @@ const RegularIcons = {
   envelopeOpen: "\uf2b6|regular",
   eye: "\uf06e|regular",
   eyeSlash: "\uf070|regular",
+  exclamationTriangle: "\uf071|regular",
   file: "\uf15b|regular",
   fileAlt: "\uf15c|regular",
   fileArchive: "\uf1c6|regular",
@@ -1019,6 +1026,7 @@ const RegularIcons = {
   fileCode: "\uf1c9|regular",
   fileExcel: "\uf1c3|regular",
   fileImage: "\uf1c5|regular",
+  fileImport: "\uf56f|regular",
   filePdf: "\uf1c1|regular",
   filePowerpoint: "\uf1c4|regular",
   fileVideo: "\uf1c8|regular",
@@ -1090,6 +1098,7 @@ const RegularIcons = {
   paperPlane: "\uf1d8|regular",
   pauseCircle: "\uf28b|regular",
   playCircle: "\uf144|regular",
+  plus: "\uf067|regular",
   plusSquare: "\uf0fe|regular",
   questionCircle: "\uf059|regular",
   registered: "\uf25d|regular",
@@ -1122,7 +1131,7 @@ const RegularIcons = {
 }
 
 const BrandIcons = {
-  _fontFamily: Platform.OS === 'ios' ? 'FontAwesome5BrandsRegular' : 'fa-brands-400',
+  _fontFamily: Platform.OS === 'ios' ? 'FontAwesome5Brands-Regular' : 'fa-brands-400',
   '500px': "\uf26e|brand",
   accessibleIcon: "\uf368|brand",
   accusoft: "\uf369|brand",
@@ -1625,6 +1634,7 @@ function parseIconFromClassName(iconClassName) {
 
 export {
   SolidIcons,
+  LightIcons,
   RegularIcons,
   BrandIcons,
   parseIconFromClassName
